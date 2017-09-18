@@ -23,34 +23,41 @@
  *
  */
 
+/**
+ * 可以重新生成schema.graphql和schema.json。
+ * 运行npm run update-schema 命令可以重新生成这2个文件。
+ * schema.graphql 直观的展示了全部的type scheme查询类型，通过这个文件我们可以轻松地理解整个服务器的数据结构
+ * schema.json graphiql.js控制台第一次访问会请求schema.json，用于查询框智能语法提示
+ */
+
 'use strict';
 
 import fs from 'fs';
 import path from 'path';
 import { Schema } from './schema';
-import { graphql }  from 'graphql';
+import { graphql } from 'graphql';
 import { introspectionQuery, printSchema } from 'graphql/utilities';
 
 // Save JSON of full schema introspection for Babel Relay Plugin to use
 (async () => {
-  var result = await (graphql(Schema, introspectionQuery));
-  if (result.errors) {
-    console.error(
-      'ERROR introspecting schema: ',
-      JSON.stringify(result.errors, null, 2)
-    );
-  } else {
-    fs.writeFileSync(
-      path.join(__dirname, './schema.json'),
-      JSON.stringify(result, null, 2)
-    );
-  }
+	var result = await (graphql(Schema, introspectionQuery));
+	if (result.errors) {
+		console.error(
+			'ERROR introspecting schema: ',
+			JSON.stringify(result.errors, null, 2)
+		);
+	} else {
+		fs.writeFileSync(
+			path.join(__dirname, './schema.json'),
+			JSON.stringify(result, null, 2)
+		);
+	}
 })();
 
 // Save user readable type system shorthand of schema
 fs.writeFileSync(
-  path.join(__dirname, './schema.graphql'),
-  printSchema(Schema)
+	path.join(__dirname, './schema.graphql'),
+	printSchema(Schema)
 );
 
 console.log('Done. Restart React Native packager using: \n');

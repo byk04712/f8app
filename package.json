@@ -11,16 +11,16 @@
   },
   "dependencies": {
     "art": "~0.10.1",
-    "babel-cli": "~6.10.1",
-    "babel-relay-plugin": "~0.9.1",
+    "babel-cli": "^6.26.0",
+    "babel-relay-plugin": "^0.11.0",
     "crc32": "~0.2.2",
-    "express": "~4.14.0",
-    "express-graphql": "~0.5.3",
+    "express": "^4.15.4",
+    "express-graphql": "^0.6.11",
     "graphql-relay": "~0.4.2",
     "moment": "~2.13.0",
-    "parse": "~1.8.2",
-    "parse-dashboard": "~1.0.8",
-    "parse-server": "~2.2.6",
+    "parse": "^1.10.0",
+    "parse-dashboard": "^1.1.0",
+    "parse-server": "^2.6.1",
     "react": "~15.1.0",
     "react-native": "0.28.0",
     "react-native-code-push": "~1.12.2-beta",
@@ -39,12 +39,12 @@
     "reselect": "~2.5.1"
   },
   "devDependencies": {
-    "babel-eslint": "~6.1.0",
-    "babel-jest": "~13.0.0",
-    "babel-polyfill": "~6.9.1",
-    "eslint": "~2.13.1",
-    "eslint-plugin-react": "~5.2.2",
-    "jest-cli": "~13.0.0"
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "^21.0.2",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^4.7.0",
+    "eslint-plugin-react": "^7.3.0",
+    "jest-cli": "^21.1.0"
   },
   "jest": {
     "haste": {

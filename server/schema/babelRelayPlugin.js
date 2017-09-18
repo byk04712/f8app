@@ -21,6 +21,9 @@
  *
  */
 
+ /**
+  * 提供scheme数据给Relay
+  */
 'use strict';
 
 const getBabelRelayPlugin = require('babel-relay-plugin');
