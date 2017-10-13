@@ -1,17 +1,17 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'F8v2' do
-  pod 'React', :subspecs => [
-    'Core',
-    'RCTActionSheet',
-    'RCTImage',
-    'RCTNetwork',
-    'RCTText',
-    'RCTWebSocket',
-    'RCTPushNotification',
-    'RCTLinkingIOS',
-    'RCTVibration',
-  ], :path => '../node_modules/react-native'
+  #pod 'React', :subspecs => [
+  #  'Core',
+  #  'RCTActionSheet',
+  #  'RCTImage',
+  #  'RCTNetwork',
+  #  'RCTText',
+  #  'RCTWebSocket',
+  #  'RCTPushNotification',
+  #  'RCTLinkingIOS',
+  #  'RCTVibration',
+  #], :path => '../node_modules/react-native'
   pod 'react-native-fbsdk', :subspecs => [
     'Core',
     'Login',

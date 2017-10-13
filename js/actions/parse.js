@@ -34,32 +34,32 @@ const Maps = Parse.Object.extend('Maps');
 const Notification = Parse.Object.extend('Notification');
 
 function loadParseQuery(type: string, query: Parse.Query): ThunkAction {
-  return (dispatch) => {
-    return query.find({
-      success: (list) => {
-        // We don't want data loading to interfere with smooth animations
-        InteractionManager.runAfterInteractions(() => {
-          // Flow can't guarantee {type, list} is a valid action
-          dispatch(({type, list}: any));
-        });
-      },
-      error: logError,
+	return (dispatch) => {
+		return query.find({
+			success: (list) => {
+				// We don't want data loading to interfere with smooth animations
+				InteractionManager.runAfterInteractions(() => {
+					// Flow can't guarantee {type, list} is a valid action
+					dispatch(({ type, list }: any));
+			});
+	},
+		error: logError,
     });
   };
 }
 
 module.exports = {
-  loadSessions: (): ThunkAction =>
-    loadParseQuery(
-      'LOADED_SESSIONS',
-      new Parse.Query('Agenda')
-        .include('speakers')
-        .ascending('startTime')
-    ),
+	loadSessions: (): ThunkAction =>
+		loadParseQuery(
+			'LOADED_SESSIONS',
+			new Parse.Query('Agenda')
+				.include('speakers')
+				.ascending('startTime')
+		),
 
-  loadMaps: (): ThunkAction =>
-    loadParseQuery('LOADED_MAPS', new Parse.Query(Maps)),
+	loadMaps: (): ThunkAction =>
+		loadParseQuery('LOADED_MAPS', new Parse.Query(Maps)),
 
-  loadNotifications: (): ThunkAction =>
-    loadParseQuery('LOADED_NOTIFICATIONS', new Parse.Query(Notification)),
+	loadNotifications: (): ThunkAction =>
+		loadParseQuery('LOADED_NOTIFICATIONS', new Parse.Query(Notification)),
 };

@@ -36,14 +36,14 @@ const testActions = require('./test');
 const installationActions = require('./installation');
 
 module.exports = {
-  ...loginActions,
-  ...scheduleActions,
-  ...filterActions,
-  ...notificationActions,
-  ...configActions,
-  ...surveyActions,
-  ...testActions,
-  ...parseActions,
-  ...navigationActions,
-  ...installationActions,
+    ...loginActions,
+    ...scheduleActions,
+    ...filterActions,
+    ...notificationActions,
+    ...configActions,
+    ...surveyActions,
+    ...testActions,
+    ...parseActions,
+    ...navigationActions,
+    ...installationActions,
 };

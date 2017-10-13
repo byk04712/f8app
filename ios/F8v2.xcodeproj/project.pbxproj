@@ -17,6 +17,13 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7A7931406B2560B8A7347FB6 /* libPods-F8v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD44AA9DD03A6B80ABA2B850 /* libPods-F8v2.a */; };
+		A13090C51F73324A00A6E650 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090C41F73324A00A6E650 /* libReact.a */; };
+		A13090C81F73326B00A6E650 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090C71F73326B00A6E650 /* libCodePush.a */; };
+		A13090CA1F73327000A6E650 /* libreact-native-fbsdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090C91F73327000A6E650 /* libreact-native-fbsdk.a */; };
+		A13090CC1F73327F00A6E650 /* libFBSDKShareKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090CB1F73327F00A6E650 /* libFBSDKShareKit.a */; };
+		A13090CE1F73328400A6E650 /* libFBSDKLoginKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090CD1F73328400A6E650 /* libFBSDKLoginKit.a */; };
+		A13090D01F73328B00A6E650 /* libFBSDKCoreKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090CF1F73328B00A6E650 /* libFBSDKCoreKit.a */; };
+		A13090D21F73328F00A6E650 /* libBolts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13090D11F73328F00A6E650 /* libBolts.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = F8v2/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = F8v2/main.m; sourceTree = "<group>"; };
 		3F2AE10902A4B3DF9B9ADD12 /* Pods-F8v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-F8v2.release.xcconfig"; path = "Pods/Target Support Files/Pods-F8v2/Pods-F8v2.release.xcconfig"; sourceTree = "<group>"; };
+		A13090C41F73324A00A6E650 /* libReact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReact.a; path = "Pods/../build/Debug-iphoneos/React/libReact.a"; sourceTree = "<group>"; };
+		A13090C71F73326B00A6E650 /* libCodePush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCodePush.a; path = "Pods/../build/Debug-iphoneos/CodePush/libCodePush.a"; sourceTree = "<group>"; };
+		A13090C91F73327000A6E650 /* libreact-native-fbsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libreact-native-fbsdk.a"; path = "Pods/../build/Debug-iphoneos/react-native-fbsdk/libreact-native-fbsdk.a"; sourceTree = "<group>"; };
+		A13090CB1F73327F00A6E650 /* libFBSDKShareKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFBSDKShareKit.a; path = "Pods/../build/Debug-iphoneos/FBSDKShareKit/libFBSDKShareKit.a"; sourceTree = "<group>"; };
+		A13090CD1F73328400A6E650 /* libFBSDKLoginKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFBSDKLoginKit.a; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/libFBSDKLoginKit.a"; sourceTree = "<group>"; };
+		A13090CF1F73328B00A6E650 /* libFBSDKCoreKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFBSDKCoreKit.a; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit/libFBSDKCoreKit.a"; sourceTree = "<group>"; };
+		A13090D11F73328F00A6E650 /* libBolts.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBolts.a; path = "../../../../Library/Developer/Xcode/DerivedData/F8v2-dpwjcikurtgdtwgxapgrhjosstzb/Build/Products/Debug-iphonesimulator/Bolts/libBolts.a"; sourceTree = "<group>"; };
 		AC693429287C251DA7465449 /* Pods-F8v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-F8v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-F8v2/Pods-F8v2.debug.xcconfig"; sourceTree = "<group>"; };
 		AD44AA9DD03A6B80ABA2B850 /* libPods-F8v2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-F8v2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +83,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13090D21F73328F00A6E650 /* libBolts.a in Frameworks */,
+				A13090D01F73328B00A6E650 /* libFBSDKCoreKit.a in Frameworks */,
+				A13090CE1F73328400A6E650 /* libFBSDKLoginKit.a in Frameworks */,
+				A13090CC1F73327F00A6E650 /* libFBSDKShareKit.a in Frameworks */,
+				A13090CA1F73327000A6E650 /* libreact-native-fbsdk.a in Frameworks */,
+				A13090C81F73326B00A6E650 /* libCodePush.a in Frameworks */,
+				A13090C51F73324A00A6E650 /* libReact.a in Frameworks */,
 				0095423B1C175AB600433EAF /* libBVLinearGradient.a in Frameworks */,
 				7A7931406B2560B8A7347FB6 /* libPods-F8v2.a in Frameworks */,
 			);
@@ -122,6 +143,13 @@
 		3F4DDA6DC90E123F105F7DF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A13090D11F73328F00A6E650 /* libBolts.a */,
+				A13090CF1F73328B00A6E650 /* libFBSDKCoreKit.a */,
+				A13090CD1F73328400A6E650 /* libFBSDKLoginKit.a */,
+				A13090CB1F73327F00A6E650 /* libFBSDKShareKit.a */,
+				A13090C91F73327000A6E650 /* libreact-native-fbsdk.a */,
+				A13090C71F73326B00A6E650 /* libCodePush.a */,
+				A13090C41F73324A00A6E650 /* libReact.a */,
 				AD44AA9DD03A6B80ABA2B850 /* libPods-F8v2.a */,
 			);
 			name = Frameworks;
@@ -331,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F391BEA07F3C4EAAEE2D8F23 /* [CP] Copy Pods Resources */ = {
@@ -439,11 +467,20 @@
 				DEAD_CODE_STRIPPING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/**",
+					"$(PODS_ROOT)/**",
 				);
 				INFOPLIST_FILE = F8v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/React",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CodePush",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/react-native-fbsdk",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKShareKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -462,11 +499,20 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/**",
+					"$(PODS_ROOT)/**",
 				);
 				INFOPLIST_FILE = F8v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/React",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CodePush",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/react-native-fbsdk",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKShareKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
